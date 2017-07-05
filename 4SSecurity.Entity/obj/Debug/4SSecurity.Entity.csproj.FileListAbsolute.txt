@@ -1,0 +1,5 @@
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Entity\bin\Debug\4SSecurity.Entity.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Entity\bin\Debug\4SSecurity.Entity.pdb
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Entity\obj\Debug\4SSecurity.Entity.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Entity\obj\Debug\4SSecurity.Entity.pdb
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Entity\obj\Debug\4SSecurity.Entity.csprojResolveAssemblyReference.cache

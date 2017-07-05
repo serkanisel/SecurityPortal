@@ -1,0 +1,483 @@
+﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Content/lib/jquery-toggles/toggles.js"></script>
+<div class="contentpanel">
+    
+        <ol class="breadcrumb breadcrumb-quirk">
+            <li><a href="@Url.Action("Index","Home")"><i class="fa fa-home mr5"></i> Ana Sayfa</a></li>
+            <li class="active">Eğitimlerim</li>
+        </ol>
+
+
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <div class="well well-asset-options clearfix">
+                    <div class="btn-group pull-left" data-toggle="buttons">
+                        <label class="btn btn-default-active active">
+                            <input type="checkbox" checked=""> Hepsi
+                        </label>
+                        <label class="btn btn-default-active">
+                            <input type="checkbox"> Resimler
+                        </label>
+                        <label class="btn btn-default-active">
+                            <input type="checkbox"> Videolar
+                        </label>
+                        <label class="btn btn-default-active">
+                            <input type="checkbox"> Dökümanlar
+                        </label>
+                        <label class="btn btn-default-active">
+                            <input type="checkbox"> Ses Dosyaları
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row filemanager">
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 audio">
+                        <div class="thmb">
+                            <label class="ckbox" style="display: none;">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group" style="display: none;">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp3.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="@Url.Action("ShowVideo", "Home", new { url = "~/Files/4s_Akademi.mp4" })" onclick="setVideoName('../Files/4s_Akademi_Siber_Guvenlik_Sunumu_v1.0.mp4')">Siber Güvenlik Sunumu v1.0</a></h5>
+                            <small class="text-muted">Added: May 18, 2017</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 document">
+                        <div class="thmb">
+                            <label class="ckbox" style="display: none;">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group" style="display: none;">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/doc.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">Bilgi Güvenliği Sunumu</a></h5>
+                            <small class="text-muted">Added: May 5, 2017</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image">
+                        <div class="thmb">
+                            <label class="ckbox" style="display: none;">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group" style="display: none;">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <a href="">
+                                    <img src="../Content/images/png.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <h5 class="fm-title"><a href="">GreatCity.png</a></h5>
+                            <small class="text-muted">Added: June 30, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 video">
+                        <div class="thmb">
+                            <label class="ckbox" style="display: none;">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group" style="display: none;">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp4.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">InTheSea.mp4</a></h5>
+                            <small class="text-muted">Added: June 30, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 document">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/doc.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">MyDocuments.doc</a></h5>
+                            <small class="text-muted">Added: Jan 03, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <a href="">
+                                    <img src="../Content/images/png.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <h5 class="fm-title"><a href="">Vegetarian.png</a></h5>
+                            <small class="text-muted">Added: Jan 02, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 video">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp4.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">DogAnimation.mp4</a></h5>
+                            <small class="text-muted">Added: Jan 02, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 audio">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp3.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">WreckingBall.mp3</a></h5>
+                            <small class="text-muted">Added: Jan 01, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <a href="">
+                                    <img src="../Content/images/png.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <h5 class="fm-title"><a href="">MyFirstArt.png</a></h5>
+                            <small class="text-muted">Added: Jan 01, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 document">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/docx.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">MyResume.docx</a></h5>
+                            <small class="text-muted">Added: Jan 01, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 video">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp4.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">MyFirstMovie.mp4</a></h5>
+                            <small class="text-muted">Added: Jan 01, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <a href="">
+                                    <img src="../Content/images/png.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <h5 class="fm-title"><a href="">MeAndFriends.png</a></h5>
+                            <small class="text-muted">Added: Jan 01, 2015</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 audio">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp3.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">IWillSurvive.mp3</a></h5>
+                            <small class="text-muted">Added: Dec 31, 2014</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 document">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/doc.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">MyDocuments.doc</a></h5>
+                            <small class="text-muted">Added: Dec 31, 2014</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <a href="">
+                                    <img src="../Content/images/png.png" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <h5 class="fm-title"><a href="">GreatCity.png</a></h5>
+                            <small class="text-muted">Added: Dec 30, 2014</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 video">
+                        <div class="thmb">
+                            <label class="ckbox">
+                                <input type="checkbox"><span></span>
+                            </label>
+                            <div class="btn-group fm-group">
+                                <button type="button" class="btn btn-default dropdown-toggle fm-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right fm-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-Paylaş"></i> Paylaş</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Düzenle</a></li>
+                                    <li><a href="#"><i class="fa fa-İndir"></i> İndir</a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Sil</a></li>
+                                </ul>
+                            </div><!-- btn-group -->
+                            <div class="thmb-prev">
+                                <img src="../Content/images/mp4.png" class="img-responsive" alt="">
+                            </div>
+                            <h5 class="fm-title"><a href="">InTheSea.mp4</a></h5>
+                            <small class="text-muted">Added: Dec 30, 2014</small>
+                        </div><!-- thmb -->
+                    </div><!-- col-xs-6 -->
+
+                </div><!-- row -->
+            </div><!-- col-sm-9 -->
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="fm-sidebar">
+
+                    <button class="btn btn-danger btn-quirk btn-block mb20">Dosya Yükle</button>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Klasörler</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="folder-list">
+                                <li><a href=""><i class="fa fa-folder-open"></i> Fotoğraflarım</a></li>
+                                <li><a href=""><i class="fa fa-folder-open"></i> Kendi Hazırladığım Eğitimler</a></li>
+                                <li><a href=""><i class="fa fa-folder-open"></i> Sunumlar</a></li>
+                                <li><a href=""><i class="fa fa-folder-open"></i> E-Kitap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <h4 class="panel-title mb20">Tags</h4>
+                    <ul class="tag-list">
+                        <li><a href="">Animasyon</a></li>
+                        <li><a href="">Tasarım</a></li>
+                        <li><a href="">Trailer</a></li>
+                        <li><a href="">Kısa Film</a></li>
+                        <li><a href="">Film Müziği</a></li>
+                        <li><a href="">Fotoğraf</a></li>
+                        <li><a href="">Macro</a></li>
+                        <li><a href="">Tuturials</a></li>
+                        <li><a href="">Döküman</a></li>
+                    </ul>
+
+                    <div class="mb30 clearfix"></div>
+
+                    @*<h4 class="panel-title mb10">CrDüzenle</h4>*@
+                    
+
+                </div>
+            </div><!-- col-sm-3 -->
+        </div>
+    </div>
+
+
+
+
+<script>
+
+    $("#menuAnaSayfa").removeClass("active");
+    $("#menuEgitimlerim").addClass("active");
+</script>
+

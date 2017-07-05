@@ -1,0 +1,81 @@
+﻿@using FourSSecurityPortal.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+<link href="~/Content/lib/fontawesome/css/font-awesome.css" rel="stylesheet" />
+<link href="~/Content/css/quirk.css" rel="stylesheet" />
+<script src="~/Content/lib/modernizr/modernizr.js"></script>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<body class="signwrapper">
+    <div class="sign-overlay"></div>
+    <div class="signpanel"></div>
+    <div class="panel signin">
+        <div class="panel-heading">
+            <h1>
+                <img src="~/Content/images/4slogo-1.png" style="left:30px;"/></h1>
+            <h4 class="panel-title">Güvenlik Eğitim Portali</h4>
+        </div>
+        <div class="panel-body">
+            <button class="btn btn-primary btn-quirk btn-fb btn-block">Facebook ile Bağlanın</button>
+            <div class="or">veya</div>
+            <form action="index.html">
+                <div class="form-group mb10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" placeholder="kullanıcı adı" id="loginname">
+                    </div>
+                </div>
+                <div class="form-group nomargin">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="şifre" id="pass">
+                    </div>
+                </div>
+                <div><a href="" class="forgot">şifremi unuttum</a></div>
+                <div class="form-group">
+                    <a href="javascript:void(0)" id="girisButton" class="btn btn-success btn-quirk btn-block" onclick="login()">Giriş</a><br />
+                    <span id="message" style="color:#ff0000;"></span>
+                </div>
+            </form>
+            <hr class="invisible">
+            @*<div class="form-group">
+                <a href="signup.html" class="btn btn-default btn-quirk btn-stroke btn-stroke-thin btn-block btn-sign">Not a member? Sign up now!</a>
+            </div>*@
+        </div>
+    </div><!-- panel -->
+
+    <script>
+        function login() {
+            
+            var loginname = $("#loginname").val();
+            var pass = $("#pass").val();
+
+            $.ajax({
+                url: 'Login',
+                type: "POST",
+                cache: false,
+                async: false,
+                data: { loginname: loginname, pass: pass },
+                success: function (text, data) {
+                    window.location.href = '@Url.Action("Index","Home")';
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    $("#message").html("kullanıcı adı ve/veya şifre hatalı");
+                }
+            });
+        }
+
+        $(function () {
+            $('input').keydown(function (e) {
+                if (e.keyCode == 13) {
+                    $("#girisButton").focus().click();
+                    return false;
+                }
+            });
+        });
+    </script>
+
+</body>

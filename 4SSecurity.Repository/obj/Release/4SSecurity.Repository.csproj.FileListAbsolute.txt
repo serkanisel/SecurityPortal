@@ -1,0 +1,14 @@
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.Repository.dll.config
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.Repository.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.Repository.pdb
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.DataLayer.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\EntityFramework.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\EntityFramework.SqlServer.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.Entity.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.DataLayer.pdb
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\EntityFramework.xml
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\EntityFramework.SqlServer.xml
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\bin\Release\4SSecurity.Entity.pdb
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\obj\Release\4SSecurity.Repository.csprojResolveAssemblyReference.cache
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\obj\Release\4SSecurity.Repository.dll
+E:\Projects\4S projects\Teydep Security\Code\Portal\4SSecurityPortal\4SSecurity.Repository\obj\Release\4SSecurity.Repository.pdb
